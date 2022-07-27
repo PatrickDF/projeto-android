@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Droid';
+    src: url('fonts/IDroid.otf') format('opentype'), url('fonts/IDroid Bold.otf') format('opentype'), url('fonts/IDroid Italic.otf') format('opentype'), url('fonts/IDroid Bold Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Os : é linguagem de CSS para dizer que é uma variável */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main p{
+    text-indent: 30px;
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 1.5em;
+}
+
+main strong{
+    color: #83e1ad;
+}
+
+main a{
+    text-decoration: none;
+    background-color: #83e1ad;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Arial Narrow', cursiva;
+    --fonte-android: 'Droid';
+}
+
+body{
+	background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\1F517';
+}
+
+header{
+    background-image: linear-gradient(to top, #1A5C38, #247A49, #2B995C, #3DD980, #88CDA4);
+    font-family: var(--fonte-padrao);
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-padrao);
+    margin-bottom: 20px;
+    text-shadow: 4px 3px 0px #0000008e;
+
+}
+
+header > p{
+    color: white;
+    text-shadow: 2px 2px 2px #00000070;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition-duration: 0.5s;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: #2B995C;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+main{
+    background-color: white;
+    min-width: 280px;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+}
+
+main h1{
+    color: #2e6d4a;
+    font-family: 'Droid';
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #2fa865c9;
+    
+}
+main h2{
+    color: #2e6d4a;
+    font-family:'Droid';
+    background-image: linear-gradient(to right, #3dd98198, #88cda498, white);
+    padding-left: 10px;
+    text-shadow: 1px 1px 1px #2fa866;
+    
+}
+
+main > img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    
+}
+
+div.video{
+    background-color: #1A5C38;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: #83e1ad;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.493);
+}
+
+aside h3{
+    background-color: #1A5C38;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+/* O \00A0 é o código para espaço/espaçamento em branco */
+
+
+footer{
+    background-color:var(--cor5);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
